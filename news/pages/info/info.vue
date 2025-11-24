@@ -38,6 +38,7 @@
 <style>
 .content{padding:10upx 2%; width: 96%; flex-warp:warp;}
 .title{line-hight:2em; font-weight:700; font_size:38upx;}
+
 .art-content{line-height: 2em;}
 </style -->>
 <template>
@@ -71,7 +72,7 @@ export default {
 
 		uni.request({
 			// 这里也改成 posts.json
-			url: 'https://raw.githubusercontent.com/Nyla11/school-data/main/posts.json',
+			url: 'https://raw.githubusercontent.com/Nyla11/news/main/posts.json',
 			method: 'GET',
 			success: res => {
 				let list = res.data.posts; // 使用 posts

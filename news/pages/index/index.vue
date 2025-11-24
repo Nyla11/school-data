@@ -54,6 +54,7 @@
 <style>
 	.uni-media-list-body{height: auto;}
 	.uni-media-list-text-top{line-height: 1.6em;}
+
 </style> -->
 <template>
 	<view class="content">
@@ -100,7 +101,7 @@ export default {
 
 		uni.request({
 			// 已替换为 posts.json
-			url: 'https://raw.githubusercontent.com/Nyla11/school-data/main/posts.json',
+			url: 'https://raw.githubusercontent.com/Nyla11/news/main/posts.json',
 			method: 'GET',
 			success: res => {
 				this.news = res.data.posts; // 注意这里是 posts
